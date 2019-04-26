@@ -4,6 +4,6 @@ const ZeroframeRouter = require('./vue-zeroframe-router');
 
 module.exports = {
   Router,
-  ...utils
+  ...utils,
   ...ZeroframeRouter
 }
