@@ -1,6 +1,6 @@
-const Router = require('./router');
-const utils = require('./utils');
-const ZeroframeRouter = require('./vue-zeroframe-router');
+const Router = require('./router')
+const utils = require('./utils')
+const ZeroframeRouter = require('./vue-zeroframe-router')
 
 module.exports = {
   Router,
