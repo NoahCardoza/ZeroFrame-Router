@@ -30,7 +30,7 @@ const VueZeroFrameRouter = {
 	}
 };
 
-function VueZeroFrameRouter_Init(Router, vueInstance, routes) {
+function VueZeroFrameRouterInit(Router, vueInstance, routes) {
 	VueZeroFrameRouter.routes = routes;
 	for (var i = 0; i < routes.length; i++) {
 		Router.add(routes[i].route, !routes[i].component.init ? function() {} : routes[i].component.init, {
@@ -48,6 +48,6 @@ function VueZeroFrameRouter_Init(Router, vueInstance, routes) {
 }
 
 module.exports = {
-	VueZeroFrameRouter: VueZeroFrameRouter,
-	VueZeroFrameRouter_Init: VueZeroFrameRouter_Init
+	VueZeroFrameRouter,
+	VueZeroFrameRouterInit
 }
