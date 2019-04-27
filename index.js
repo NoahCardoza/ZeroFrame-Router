@@ -1,9 +1,3 @@
-const Router = require('./router')
-const utils = require('./utils')
-const ZeroframeRouter = require('./vue-zeroframe-router')
-
-module.exports = {
-  Router,
-  ...utils,
-  ...ZeroframeRouter
-}
+export { default as Router } from './router';
+export * from './utils';
+export * from './vue-zeroframe-router';
